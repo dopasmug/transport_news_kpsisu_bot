@@ -1,0 +1,12 @@
+{
+    "imports": {
+        "grammy": "https://deno.land/x/grammy@v1.38.3/mod.ts",
+        "rss": "jsr:@mikaelporttila/rss@*",
+        "cheerio": "jsr:@cheerio/entities",
+        "deno-dom": "jsr:@b-fuze/deno-dom"
+    },
+    "tasks": {
+        "start": "deno -IN --allow-read --allow-env --env-file bot.ts",
+        "test": "deno test --allow-net --allow-import bot.ts"
+    }
+}
