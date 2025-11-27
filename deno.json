@@ -3,10 +3,12 @@
         "grammy": "https://deno.land/x/grammy@v1.38.3/mod.ts",
         "rss": "jsr:@mikaelporttila/rss@*",
         "cheerio": "jsr:@cheerio/entities",
-        "deno-dom": "jsr:@b-fuze/deno-dom"
+        "deno-dom": "jsr:@b-fuze/deno-dom",
+        "grammy-context": "https://deno.land/x/grammy@v1.38.3/context.ts",
+        "google-translate": "npm:@vitalets/google-translate-api"
     },
     "tasks": {
-        "start": "deno -IN --allow-read --allow-env --env-file bot.ts",
-        "test": "deno test --allow-net --allow-import bot.ts"
+        "start": "deno -IN --allow-read --allow-write --allow-env --env-file src/bot.ts",
+        "test": "deno test --allow-net --allow-import src/bot.ts"
     }
 }
